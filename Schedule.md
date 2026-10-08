@@ -190,6 +190,58 @@
 
 ---
 
+## 目标职业与投递预备清单
+
+**目标岗位:** SoC 软件工程师 / BSP Engineer / Firmware Engineer(芯片公司方向,从量化研究转型)
+
+**gap narrative 卖点:** 量化研究背景 + PicoRV32 BSP 项目 = 跨界差异化(普通码农写不了 BSP,懂量化更少)。
+
+### S 级(5 家)— RISC-V / BSP 直接对口
+
+| 公司 | 对口点 |
+|---|---|
+| 平头哥(阿里玄铁) | RISC-V IP + BSP |
+| SiFive(US,RISC-V 龙头) | 编译器 / 工具链 / BSP |
+| Andes 晶心科技(台湾,RISC-V IP) | BSP + IP 软件 |
+| 兆易创新(GD32 MCU + RISC-V) | Embedded 驱动 |
+| 紫光展锐(手机 SoC) | Linux BSP / Modem 软件 |
+
+### A 级(6 家)— 芯片大厂,BSP / Embedded Linux 岗位多
+
+| 公司 | 对口点 |
+|---|---|
+| 海思(华为) | 受制裁但仍招 BSP |
+| 寒武纪(AI 芯片) | 软件栈 / 驱动 |
+| 地平线(自动驾驶 SoC) | BSP / 中间件 |
+| 比特大陆(矿机 / AI) | BSP |
+| 联发科 MediaTek | BSP 大户,长期招 |
+| 瑞芯微 Rockchip | Linux BSP |
+
+### B 级(7 家)— EDA / IP / AI 芯片软件栈
+
+| 公司 | 对口点 |
+|---|---|
+| Synopsys / Cadence / Imagination | IP 验证 / 工具链 |
+| 壁仞 / 燧原 / 黑芝麻 | AI 芯片软件栈 |
+
+### 岗位关键词(简历 + JD 匹配)
+
+- SoC Software Engineer / BSP Engineer
+- Embedded Linux Engineer / Firmware Engineer
+- Driver Engineer / **RISC-V Software Engineer**
+- Linux Kernel Engineer(芯片侧)
+- SoC Software Architect(高级岗,3-5 年后)
+
+### 投递节奏(对照 W5-W7)
+
+| 周 | 数量 | 目标公司 |
+|---|---|---|
+| **W5 测试投** | 5 家 | S 级 1-2 家(把握大的)+ A 级 3-4 家 |
+| **W6 正式投** | 15+ 家 | S 级 5 家全投 + A 级全覆盖 + B 级挑 2-3 家 |
+| **W7 累计** | 30+ 家 | 补全 B 级 + 激活 5 位内推预备 |
+
+---
+
 ## 资源链接
 
 - **刷题清单:** [`DataStructure_Alg.md`](./DataStructure_Alg.md)(103 题 + 💎 双倍收益标注)
