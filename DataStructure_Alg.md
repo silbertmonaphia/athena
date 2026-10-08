@@ -16,6 +16,33 @@
 
 ---
 
+## 💎 双倍收益题(FAANG + 芯片/SoC 软件架构师双修)
+
+> **来源:** [CAREER.md v3.0 双轨并行策略](./CAREER.md)。**核心思想:** 这些题在 FAANG 面试中会考,在芯片/SoC 软件架构师方向**更吃香**(寄存器、位域、协议解析、AMBA 总线、CSR、BootROM 编码等)。**优先做完,1 次投入双份收益。**
+
+| # | LC# | 题目 | 模式 | 双倍收益理由 |
+|---|---|---|---|---|
+| **C89** ⭐ | 191 | Number of 1 Bits | Bit | **芯片**:寄存器位运算 / CSR 掩码;**FAANG**:位运算基础 |
+| **C90** ⭐ | 268 | Missing Number | Bit/XOR | **芯片**:协议字段 XOR 校验;**FAANG**:位运算经典 |
+| **C91** ⭐ | 338 | Counting Bits | Bit+DP | **芯片**:cache line / 总线位宽拆解;**FAANG**:DP+位运算 |
+| **S7** ⭐ | 739 | Daily Temperatures | Monotonic Stack | **芯片**:硬件协议解析、调度;**FAANG**:单调栈必考 |
+| **A28** ⭐ | 42 | Trapping Rain Water | 双指针/单调栈 | **芯片**:波形/采样序列处理;**FAANG**:Hard 必考 |
+| **B60** ⭐ | 155 | Min Stack | Stack 维护 | **芯片**:实时数据栈;**FAANG**:Easy 基础 |
+| **B61** | 150 | Evaluate RPN | Stack | **芯片**:指令执行栈模型;**FAANG**:Easy-Med 必考 |
+| **B62** ⭐⭐ | 84 | Largest Rectangle in Histogram | Monotonic Stack | **芯片**:timing path 分析;**FAANG**:Hard 经典 |
+| **B63** | 853 | Car Fleet | Stack | **芯片**:调度延迟分析;**FAANG**:单调栈变体 |
+| **B64** | 394 | Decode String | Stack+String | **芯片**:协议解析 / BootROM 字符串展开;**FAANG**:Med 经典 |
+| **S6** ⭐ | 20 | Valid Parentheses | Stack | **芯片**:RTL 嵌套结构、括号匹配;**FAANG**:Easy 必考 |
+
+**做这些题的额外好处:**
+1. **位运算题(LC 191/268/338)** — 芯片面试(尤其 SoC 软件 / BSP / Driver 岗)的隐含考点
+2. **栈/单调栈题** — 协议解析、硬件 trace 分析、调度延迟分析的思维基础
+3. **位运算 + 单调栈** = 芯片软件栈面试的两类高频考点
+
+**优先级建议:** C89-C91 位运算三题 + S6-S7 栈题 + B62 单调栈 Hard,**优先于其他 B/C 段题目**。
+
+---
+
 ## TIER S (20 题)— 立刻开始
 
 > **为什么先做这 20 题:**覆盖 LinkedList、Tree、Stack、DP、Backtracking 的核心模式,几乎每场 FAANG 面试都会出现其中 1-2 题。**这 20 题没做透,其他题做了 ROI 也会打折。**
@@ -27,8 +54,8 @@
 | S3 | 146 | LRU Cache | LinkedList+Hash | Med | **高** ⭐ | |
 | S4 | 21 | Merge Two Sorted Lists | LinkedList | Easy | 低 | |
 | S5 | 23 | Merge K Sorted Lists | Heap+LinkedList | Hard | **高** ⭐ | |
-| S6 | 20 | Valid Parentheses | Stack | Easy | 低 | **重写** |
-| S7 | 739 | Daily Temperatures | Monotonic Stack | Med | 中 | |
+| S6 💎 | 20 | Valid Parentheses | Stack | Easy | 低 | **重写** |
+| S7 💎 | 739 | Daily Temperatures | Monotonic Stack | Med | 中 | |
 | S8 | 102 | Binary Tree Level Order | Tree+BFS | Med | 低 | **重写** |
 | S9 | 104 | Maximum Depth of Binary Tree | Tree+DFS | Easy | 低 | **重写** |
 | S10 | 226 | Invert Binary Tree | Tree | Easy | 低 | |
@@ -70,7 +97,7 @@
 |---|---|---|---|---|---|---|
 | A26 | 15 | 3Sum | Two Pointers | Med | 中 | **重写** |
 | A27 | 11 | Container With Most Water | Two Pointers | Med | 低 | |
-| A28 | 42 | Trapping Rain Water | 双指针/单调栈 | Hard | **高** ⭐ | |
+| A28 💎 | 42 | Trapping Rain Water | 双指针/单调栈 | Hard | **高** ⭐ | |
 
 ### 滑动窗口 (A29-A32)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 重写 |
@@ -141,11 +168,11 @@
 ### 栈进阶 (B60-B64)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 重写 |
 |---|---|---|---|---|---|---|
-| B60 | 155 | Min Stack | Stack 维护 | Easy | 低 | |
-| B61 | 150 | Evaluate RPN | Stack | Med | 低 | |
-| B62 | 84 | Largest Rectangle in Histogram | Monotonic Stack | Hard | **极高** ⭐⭐ | |
-| B63 | 853 | Car Fleet | Stack | Med | 中 | |
-| B64 NEW | 394 | Decode String | Stack+String | Med | 中 | |
+| B60 💎 | 155 | Min Stack | Stack 维护 | Easy | 低 | |
+| B61 💎 | 150 | Evaluate RPN | Stack | Med | 低 | |
+| B62 💎 | 84 | Largest Rectangle in Histogram | Monotonic Stack | Hard | **极高** ⭐⭐ | |
+| B63 💎 | 853 | Car Fleet | Stack | Med | 中 | |
+| B64 💎 NEW | 394 | Decode String | Stack+String | Med | 中 | |
 
 ### DP 全家桶 (B65-B76)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 重写 |
@@ -207,16 +234,16 @@
 | C86 | 518 | Coin Change II (组合数) | 背包 DP | Med | 中 | |
 | C87 | 35 | Search Insert Position | BS | Easy | 低 | |
 | C88 | 34 | First and Last Position | BS | Med | 低 | |
-| C89 | 191 | Number of 1 Bits | Bit | Easy | 低 | |
-| C90 | 268 | Missing Number | Bit | Easy | 低 | |
-| C91 | 338 | Counting Bits | Bit+DP | Easy | 低 | |
+| C89 💎 | 191 | Number of 1 Bits | Bit | Easy | 低 | |
+| C90 💎 | 268 | Missing Number | Bit | Easy | 低 | |
+| C91 💎 | 338 | Counting Bits | Bit+DP | Easy | 低 | |
 | C92 | 543 | Diameter of Binary Tree | Tree | Easy | 低 | |
 | C93 | 110 | Balanced Binary Tree | Tree | Easy | 低 | |
 | C94 | 236 | LCA of Binary Tree | Tree | Med | 中 | |
 
 **C 阶段产出要求:**
 - Trie (C81-C82) 必做
-- Bit (C89-C91) 三个一气呵成,理解 XOR
+- **Bit (C89-C91) 三个一气呵成,理解 XOR — 💎双倍收益,优先做(详见上文双倍收益题列表)**
 - 余下 C 题按兴趣选,但 **Task Scheduler/Partition Labels/Gas Station 已升 B**
 
 ---
