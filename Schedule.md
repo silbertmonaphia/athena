@@ -1,0 +1,178 @@
+# 转型执行周历 — 前 4 周每天做什么
+
+> **来源:** [`CAREER.md` v3.2](./CAREER.md)。这份文档是**战术执行表**,每天具体做什么。CAREER.md 是**战略规划**,讲为什么这样做。
+>
+> **目标:** 4 周后(2027-02 之前)准备好投递芯片公司 — LeetCode 累计 ≥ 47 题 + PicoRV32 BSP 演示 + gap narrative 简历 V3。
+>
+> **投入:** 全职 50h/周(每天 8:00-12:00 上午 + 13:00-17:00 下午 + 19:00-22:00 晚间)。
+
+---
+
+## 每天的时间分配
+
+| 时段 | 做什么 | 时长 |
+|---|---|---|
+| 上午 8:00-12:00 | 刷 LeetCode(2-3 题)+ 错题复盘 | 4h |
+| 下午 13:00-17:00 | 读书(《量化研究方法》/《Linux 内核》)或做系统设计 case | 4h |
+| 晚间 19:00-22:00 | Verilog 实操 / EDA Playground / PicoRV32 项目 | 3h |
+| 周末(每天 +2h) | 行业人脉 / 写技术博客 / 周复盘 | 4h |
+
+**节奏:** 上午练**算法面试能力**(也直接帮芯片理解位域、协议),下午学**底层知识**(对两边都重要),晚间做**只有芯片需要的事**(Verilog、项目)。
+
+---
+
+## 第 1 周:思维奠基
+
+**本周目标:** LeetCode 11 题(含位运算 3 题)+ 《数字设计》Ch1-5 + Verilog 入门
+
+| 星期 | 上午(刷题) | 下午(读书) | 晚间(Verilog) |
+|---|---|---|---|
+| **周一** | S1-S2(LC 206/141 链表) | 《数字设计》Ch1 | EDA Playground 注册 + LED 闪烁 |
+| **周二** | S3-S4(LC 146/21 链表) | 《数字设计》Ch2 | NAND2Tetris 第 1 周(布尔函数)|
+| **周三** | **位运算 3 题(LC 191/268/338)** 💎 | 《数字设计》Ch3 | NAND2Tetris 第 2 周(加法器)|
+| **周四** | S5(LC 23 Merge K)+ S6(LC 20 栈) | 《数字设计》Ch4 | FIFO 实现(EDA Playground)|
+| **周五** | S7(LC 739 单调栈)+ S8(LC 102 BFS) | 《数字设计》Ch5 | 状态机实现 |
+| **周六** | 错题复盘 + S 段模式笔记 | 联系行业人脉 3 位(脉脉/LinkedIn) | — |
+| **周日** | **gap narrative 简历 V1**(用 CAREER.md §4.4 模板) | 刷 1 篇系统设计文章 | — |
+
+**第 1 周末检查清单:**
+- [ ] LeetCode ≥ 11 题(含位运算 3 题)
+- [ ] 《数字设计》Ch1-5 读完
+- [ ] NAND2Tetris 第 1-2 周完成
+- [ ] EDA Playground 上 FIFO + 状态机跑通
+- [ ] gap narrative 简历 V1 完成
+
+---
+
+## 第 2 周:体系结构奠基
+
+**本周目标:** LeetCode 累计 ≥ 23 题 + 《量化研究方法》Ch1-5 + AXI-Lite slave 仿真通过
+
+| 星期 | 上午(刷题) | 下午(读书) | 晚间(Verilog) |
+|---|---|---|---|
+| **周一** | S9-S10(LC 104/226 树) | 《量化研究方法》Ch1(计算机体系结构)| AXI4 协议入门 |
+| **周二** | S11(LC 98 BST)+ S12(LC 230 BST) | 《量化研究方法》Ch2(流水线)| AXI-Lite slave 实现 |
+| **周三** | S13-S14(LC 200/133 图) 💎 | 《量化研究方法》Ch3(内存层次)| AXI-Lite 仿真测试 |
+| **周四** | S15-S16(LC 70/198 DP) | 《量化研究方法》Ch4(指令级并行)| NAND2Tetris 第 3 周 |
+| **周五** | S17-S18(LC 322/300 DP) | 《量化研究方法》Ch5(存储层次)| NAND2Tetris 第 4 周 |
+| **周六** | S 段错题复盘 + 模式总结 | 联系内推预备 5 位 | — |
+| **周日** | **系统设计 case 1**(NPU driver 算子调度)| 写技术博客 1(讲位运算)| — |
+
+**第 2 周末检查清单:**
+- [ ] LeetCode 累计 ≥ 23 题(S 段 20 + 位运算 3)
+- [ ] 《量化研究方法》Ch1-5 读完 + 笔记
+- [ ] AXI-Lite slave 仿真通过 ✅
+- [ ] NAND2Tetris 全部完成
+- [ ] 系统设计 case 1 完成(需求澄清 → 容量 → API → 高层架构)
+- [ ] 技术博客 1 篇公开
+
+---
+
+## 第 3 周:A 段刷题 + PicoRV32 项目启动
+
+**本周目标:** LeetCode 累计 ≥ 35 题 + PicoRV32 跑通 Hello World + 简历 V2
+
+| 星期 | 上午(刷题) | 下午(读书) | 晚间(Verilog/项目) |
+|---|---|---|---|
+| **周一** | A21-A22(LC 1/49 哈希) | 《Linux 内核设计与实现》Ch1-2 | PicoRV32 仓库 fork + README 读 |
+| **周二** | A23-A24(LC 347/238) | 《Linux 内核》Ch3 | PicoRV32 仿真环境搭建 |
+| **周三** | A25(LC 128)+ A26(LC 15 双指针) | 系统设计 case 1 录音 15 分钟 | PicoRV32 跑通默认 Hello World |
+| **周四** | A27-A28(LC 11/42 单调栈) 💎 | DDIA Ch1 | PicoRV32 UART 驱动修改 |
+| **周五** | A29-A30(LC 121/3 滑动窗口) | DDIA Ch2 | PicoRV32 GPIO 驱动 |
+| **周六** | A 段错题复盘 | 简历 V2 + 行业人脉 +2 | — |
+| **周日** | 写技术博客 2(讲单调栈) | 复盘本周 | — |
+
+**第 3 周末检查清单:**
+- [ ] LeetCode 累计 ≥ 35 题
+- [ ] PicoRV32 UART + GPIO 驱动跑通
+- [ ] 《Linux 内核》Ch1-3 读完
+- [ ] DDIA Ch1-2 读完
+- [ ] 系统设计 case 1 录音完成
+- [ ] gap narrative 简历 V2 完成
+- [ ] 技术博客 2 篇公开
+- [ ] 行业人脉 ≥ 5 位
+
+---
+
+## 第 4 周:月末冲刺 + 准备投递
+
+**本周目标:** LeetCode 累计 ≥ 47 题 + PicoRV32 BSP 完整化 + 简历 V3 + 投递预备 20 家
+
+| 星期 | 上午(刷题) | 下午(读书) | 晚间(Verilog/项目) |
+|---|---|---|---|
+| **周一** | B51-B52(LC 703/215 堆) 💎 | 《Linux 内核》Ch4-5 | PicoRV32 SPI 驱动 |
+| **周二** | B55-B57(LC 33/153/74 二分) | DDIA Ch3 | PicoRV32 Buildroot 启动 |
+| **周三** | B60-B62(LC 155/150/84 栈) 💎 | 系统设计 case 2 选题(Firmware 升级) | PicoRV32 Buildroot 编译 |
+| **周四** | B63-B64(LC 853/394 栈) 💎 | 系统设计 case 2 大纲 | PicoRV32 启动到 shell |
+| **周五** | B65-B67(LC 152/5/1143 DP) | 系统设计 case 2 文档 | PicoRV32 演示视频录制(3 分钟)|
+| **周六** | **月末自评**(对照下面清单)| 简历 V3 + 投递预备 20 家 | — |
+| **周日** | **月末里程碑检查** + 接下来 3 周计划 | 行业人脉 +3(累计 8)| — |
+
+**第 4 周末(月末)硬产出:**
+- [ ] LeetCode 累计 ≥ 47 题(S+A 部分 + 位运算)
+- [ ] PicoRV32 BSP 项目可演示(Shell 启动 + UART/SPI/GPIO)
+- [ ] 演示视频 1 个(3-5 分钟)
+- [ ] 技术博客 2-3 篇
+- [ ] gap narrative 简历 V3
+- [ ] 行业人脉 ≥ 8 位
+- [ ] 内推预备 ≥ 5 位
+- [ ] 系统设计 case 2 文档
+- [ ] 投递预备 20 家
+
+**月末决策门(对照 CAREER.md §6.5):**
+- ✅ 全做出来 → 进入第 5-8 周(项目深化 + 投递)
+- 🟡 大部分做出来 → 加大投入 + 找 mentor 补短板
+- 🔴 没做完 → 触发回退(转 AI/LLM Backend 或留传统软件)
+
+---
+
+## 4 周之后的计划(预告)
+
+第 5-8 周会做:
+- 继续刷 B 段剩余题(DP 全家桶 + 区间/Greedy + Union-Find)
+- PicoRV32 BSP 完整化(Buildroot → 启动到 shell → 演示视频)
+- 行为面试 STAR 故事准备(5 个故事,中英双语)
+- M3 中旬开始投递(不等 100% 完成)
+- M4 末硬截止:见到 offer
+
+具体周历等第 4 周末根据实际进展再做。
+
+---
+
+## 资源链接
+
+- **刷题清单:** [`DataStructure_Alg.md`](./DataStructure_Alg.md)(103 题 + 💎 双倍收益标注)
+- **战略规划:** [`CAREER.md`](./CAREER.md)(为什么这样做)
+- **EDA Playground:** https://www.edaplayground.com/
+- **NAND2Tetris:** https://www.coursera.org/learn/build-a-computer
+- **PicoRV32:** https://github.com/YosysHQ/picorv32
+- **《量化研究方法》:** Hennessy & Patterson, RISC-V 版
+- **《数字设计》:** Harris & Harris, 中文版
+- **《Linux 内核设计与实现》:** Robert Love(LKD)
+- **DDIA:** 《数据密集型应用系统设计》Martin Kleppmann
+
+---
+
+## 💎 双倍收益题速查(本计划用到的)
+
+每天刷题时,如果遇到标 💎 的题目,**多花 10 分钟想它在芯片里有什么等价物**,写一行笔记:
+
+| 题目 | FAANG 考 | 芯片用法 |
+|---|---|---|
+| C89 LC 191 Number of 1 Bits | 位运算基础 | 寄存器位运算 / CSR 掩码 |
+| C90 LC 268 Missing Number | XOR 经典 | 协议字段 XOR 校验 |
+| C91 LC 338 Counting Bits | DP+位运算 | cache line 位宽拆解 |
+| S6 LC 20 Valid Parentheses | Easy 必考 | RTL 嵌套结构、括号匹配 |
+| S7 LC 739 Daily Temperatures | 单调栈必考 | 硬件协议解析 |
+| A28 LC 42 Trapping Rain Water | Hard 必考 | 波形/采样序列处理 |
+| B62 LC 84 Largest Rectangle | Hard 单调栈 | timing path 分析 |
+| B51-B52 LC 703/215 堆 | 堆必考 | 调度算法 |
+
+完整 💎 索引见 [`DataStructure_Alg.md`](./DataStructure_Alg.md) 顶部。
+
+---
+
+**开始日期:** 2026-10-08
+**目标日期:** 2027-02(M4 末硬截止 — 见到 offer)
+
+**单一铁律:** 每天执行,不管心情好不好。完美主义 = 拖延 = gap 拉长。
