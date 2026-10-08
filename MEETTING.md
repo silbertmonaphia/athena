@@ -12,10 +12,26 @@
 
 ## 你的进度
 
-仓库内已完成(12 题,标 ✓ ):
-- S1 S2 S6 S8 S19 S20 A26 A38 A45 B51 C83
+**0 题已做。** 仓库内原有 12 个 .py 文件视为历史记录,**不算进度,全部重新熟悉**。
 
-**剩余 88 题。**
+### 重新熟悉建议(已存在的文件)
+
+| 文件 | 对应清单 | 处理方式 |
+|---|---|---|
+| 206_ReverseLinkedList .py | S1 | **重写**。目标是闭眼默写,不是回顾 |
+| 141_LinkedListCycle.py | S2 | **重写** |
+| 20_ValidParentheses.py | S6 | **重写** |
+| 102_BinaryTreeLevelOrderTraversal.py | S8 | **重写** |
+| 51_N-Queens.py | S19 | **重写**(Hard,本就是 AI 易错题) |
+| 239_SlidingWindowMaximum.py | S20 | **重写**(Hard,重点) |
+| 15_3Sum.py | A26 | **重写** |
+| 235_LCA_of_BST.py | A38 | **重写**(顺便修仓库原版用裸函数 + 内嵌定义的风格) |
+| 22_Generate_Parentheses.py | A45 | **重写** |
+| 703_KthLargestElementinaStream.py | B51 | **重写** |
+| 242_ValidAnagram.py | C83 | **重写** |
+| 104_MaximumDepthofBinaryTree.py | S9 | **重写** |
+
+**总进度:0 / 100。** 这 12 个文件**不算"做过"**,只用做熟悉度参考。
 
 ---
 
@@ -25,14 +41,14 @@
 
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 已做 |
 |---|---|---|---|---|---|---|
-| S1 | 206 | Reverse Linked List | LinkedList | Easy | 中 | ✓ |
-| S2 | 141 | Linked List Cycle (Floyd) | LinkedList | Easy | 中 | ✓ |
+| S1 | 206 | Reverse Linked List | LinkedList | Easy | 中 |  |
+| S2 | 141 | Linked List Cycle (Floyd) | LinkedList | Easy | 中 |  |
 | S3 | 146 | LRU Cache | LinkedList+Hash | Med | **高** ⭐ | |
 | S4 | 21 | Merge Two Sorted Lists | LinkedList | Easy | 低 | |
 | S5 | 23 | Merge K Sorted Lists | Heap+LinkedList | Hard | **高** ⭐ | |
-| S6 | 20 | Valid Parentheses | Stack | Easy | 低 | ✓ |
+| S6 | 20 | Valid Parentheses | Stack | Easy | 低 |  |
 | S7 | 739 | Daily Temperatures | Monotonic Stack | Med | 中 | |
-| S8 | 102 | Binary Tree Level Order | Tree+BFS | Med | 低 | ✓ |
+| S8 | 102 | Binary Tree Level Order | Tree+BFS | Med | 低 |  |
 | S9 | 104 | Maximum Depth of Binary Tree | Tree+DFS | Easy | 低 | |
 | S10 | 226 | Invert Binary Tree | Tree | Easy | 低 | |
 | S11 | 98 | Validate BST | Tree | Med | **高** ⭐ | |
@@ -43,8 +59,8 @@
 | S16 | 198 | House Robber | DP 模式奠基 | Med | 中 | |
 | S17 | 322 | Coin Change | DP BFS 视角 | Med | 中 | |
 | S18 | 300 | Longest Increasing Subsequence | DP+Patience | Med | 中 | |
-| S19 | 51 | N-Queens | Backtracking | Hard | **极高** ⭐⭐ | ✓ |
-| S20 | 239 | Sliding Window Maximum | Deque (单调队列) | Hard | **极高** ⭐⭐ | ✓ |
+| S19 | 51 | N-Queens | Backtracking | Hard | **极高** ⭐⭐ |  |
+| S20 | 239 | Sliding Window Maximum | Deque (单调队列) | Hard | **极高** ⭐⭐ |  |
 
 **S 阶段产出要求:**
 - 每题**手写 3 遍**(第一遍想,第二遍闭眼写,第三遍换语言/换输入类型)
@@ -69,7 +85,7 @@
 ### 双指针 (A26-A28)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 已做 |
 |---|---|---|---|---|---|---|
-| A26 | 15 | 3Sum | Two Pointers | Med | 中 | ✓ |
+| A26 | 15 | 3Sum | Two Pointers | Med | 中 |  |
 | A27 | 11 | Container With Most Water | Two Pointers | Med | 低 | |
 | A28 | 42 | Trapping Rain Water | 双指针/单调栈 | Hard | **高** ⭐ | |
 
@@ -93,7 +109,7 @@
 ### 树进阶 (A38-A44)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 已做 |
 |---|---|---|---|---|---|---|
-| A38 | 235 | LCA of BST | Tree | Med | 中 | ✓ |
+| A38 | 235 | LCA of BST | Tree | Med | 中 |  |
 | A39 | 100 | Same Tree | Tree | Easy | 低 | |
 | A40 | 572 | Subtree of Another Tree | Tree | Easy | 中 | |
 | A41 | 105 | Construct BT from Preorder+Inorder | Tree | Med | **高** ⭐ | |
@@ -104,7 +120,7 @@
 ### 回溯全家桶 (A45-A50)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 已做 |
 |---|---|---|---|---|---|---|
-| A45 | 22 | Generate Parentheses | Backtracking | Med | 中 | ✓ |
+| A45 | 22 | Generate Parentheses | Backtracking | Med | 中 |  |
 | A46 | 78 | Subsets | Backtracking | Med | 低 | |
 | A47 | 46 | Permutations | Backtracking | Med | 低 | |
 | A48 | 39 | Combination Sum | Backtracking | Med | 中 | |
@@ -123,7 +139,7 @@
 ### 堆 (B51-B53)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 已做 |
 |---|---|---|---|---|---|---|
-| B51 | 703 | Kth Largest in Stream | Heap | Easy | 低 | ✓ |
+| B51 | 703 | Kth Largest in Stream | Heap | Easy | 低 |  |
 | B52 | 973 | K Closest Points to Origin | Heap | Med | 中 | |
 | B53 | 295 | Find Median from Data Stream | Two Heaps | Hard | **高** ⭐ | |
 
@@ -180,7 +196,7 @@
 |---|---|---|---|---|---|---|
 | C81 | 208 | Implement Trie | Trie | Med | 中 | |
 | C82 | 211 | Add and Search Words | Trie+DFS | Med | 中 | |
-| C83 | 242 | Valid Anagram | Hash | Easy | 低 | ✓ |
+| C83 | 242 | Valid Anagram | Hash | Easy | 低 |  |
 | C84 | 125 | Valid Palindrome | Two Pointers | Easy | 低 | |
 | C85 | 17 | Letter Combinations of Phone Number | Backtracking | Med | 低 | |
 | C86 | 90 | Subsets II (含重复) | Backtracking | Med | 中 | |
