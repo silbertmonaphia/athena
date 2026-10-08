@@ -957,6 +957,10 @@ M6 末:offer 不满意?
 - **B 站 UP 主:** "矽说"、"老石 on 芯片"、"IC_learner"
 - **GitHub 组织:** riscv, chipsalliance, llvm, tvm
 
+### 7.5 工具栈 + 简历模板
+
+- **[`HardwareStack.md`](./HardwareStack.md)** — PicoRV32 BSP 项目累计的工具栈全表(HDL/系统/调试/协作 4 栏)+ 概念栈 + STAR 简历模板 + 90 秒面试自我介绍。简历可粘贴、GitHub README 可嵌入。
+
 ---
 
 ## 八、第一个月立即行动清单(v3.2 全职模式 — 60h/周)

@@ -250,6 +250,7 @@
 ## 资源链接
 
 - **刷题清单:** [`DataStructure_Alg.md`](./DataStructure_Alg.md)(103 题 + 💎 双倍收益标注)
+- **工具栈 + 简历模板:** [`HardwareStack.md`](./HardwareStack.md)(PicoRV32 BSP 工具全表 + STAR 写法 + 90 秒面试自我介绍)
 - **战略规划:** [`CAREER.md`](./CAREER.md)(为什么这样做)
 - **AI 即时答疑:** Claude / ChatGPT / Gemini(任何卡住的知识点,5 分钟内问完)
 - **EDA Playground:** https://www.edaplayground.com/(Verilog 仿真)

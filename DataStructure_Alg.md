@@ -307,7 +307,8 @@
 
 ## 相关文档
 
-- [`Schedule.md`](./Schedule.md) — 战术执行表(每天 8h 怎么分,4 周怎么走,W5-W16 怎么投递)
+- [`Schedule.md`](./Schedule.md) — 战术执行表(每天 10h × 6 = 60h/周,4 周怎么走,W4 末测试投 + W5 正式投)
+- [`HardwareStack.md`](./HardwareStack.md) — PicoRV32 BSP 项目工具栈 + STAR 简历模板
 - [`CAREER.md` v3.2](./CAREER.md) — 战略规划(为什么这样转型,4 个月见 offer 的整体策略)
 
 ---
