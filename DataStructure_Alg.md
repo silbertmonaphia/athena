@@ -8,6 +8,14 @@
 > 3. **Meta 新格式**(AI 协作)与 **Amazon/Google 路线**(硬化变体)都要能接住
 > 4. **大厂必考模式** 必入,小众模式压后
 
+## 与 Schedule.md 对齐(v3.2 项目优先)
+
+**这一份清单服务于"4 周 ≥ 47 题 + PicoRV32 项目主线"**,不是独立刷题计划。Schedule.md 规定:
+- **项目代码(PicoRV32 BSP)每天 3h,刷题每天 2h,AI 即时答疑 2h,晚上软技能 1h**
+- **4 周后(W5)开始投递** —— W5 测试投 5 家,W6 正式投 15+ 家,边面试边继续刷题,直到 2027-02 前见到 offer
+- 💎 双倍收益题**优先做完**,1 次投入双份收益(FAANG + 芯片 SoC 双修)
+- AI 知识答疑 5 分钟足够,推导过程不背诵 —— 见 [Schedule.md §方法论变化](./Schedule.md)
+
 ---
 
 ## 你的进度
@@ -18,7 +26,7 @@
 
 ## 💎 双倍收益题(FAANG + 芯片/SoC 软件架构师双修)
 
-> **来源:** [CAREER.md v3.0 双轨并行策略](./CAREER.md)。**核心思想:** 这些题在 FAANG 面试中会考,在芯片/SoC 软件架构师方向**更吃香**(寄存器、位域、协议解析、AMBA 总线、CSR、BootROM 编码等)。**优先做完,1 次投入双份收益。**
+> **来源:** [CAREER.md v3.2](./CAREER.md) + [Schedule.md](./Schedule.md)(战术执行表)。**核心思想:** 这些题在 FAANG 面试中会考,在芯片/SoC 软件架构师方向**更吃香**(寄存器、位域、协议解析、AMBA 总线、CSR、BootROM 编码等)。**优先做完,1 次投入双份收益。**
 
 | # | LC# | 题目 | 模式 | 双倍收益理由 |
 |---|---|---|---|---|
@@ -151,8 +159,8 @@
 ### 堆 (B51-B54)
 | # | LC# | 题目 | 模式 | 难度 | AI 易错? | 重写 |
 |---|---|---|---|---|---|---|
-| B51 | 703 | Kth Largest in Stream | Heap | Easy | 低 | **重写** |
-| B52 NEW | 215 | Kth Largest Element | QuickSelect/MinHeap | Med | **高** ⭐ | |
+| B51 💎 | 703 | Kth Largest in Stream | Heap | Easy | 低 | **重写** |
+| B52 💎 NEW | 215 | Kth Largest Element | QuickSelect/MinHeap | Med | **高** ⭐ | |
 | B53 | 973 | K Closest Points to Origin | Heap | Med | 中 | |
 | B54 | 295 | Find Median from Data Stream | Two Heaps | Hard | **高** ⭐ | |
 
@@ -250,21 +258,23 @@
 
 ## 复习节奏建议
 
-**Phase 1 (前 4 周):S + A (50 题)**
-- 每天 2 题新题 + 1 题旧题复盘
-- 重点:每题想清楚**为什么这样不是那样**、**模式名是什么**、**变体会有哪些**
-- 禁用 AI 解题,但可以问 AI 思路
+**Phase 1 (W1-W4,前 4 周):S + A 段 50 题 + 关键 💎 题**
+- 每天 2-3 题新题(2h 刷题时段)+ 1 题旧题复盘
+- 目标:**累计 ≥ 47 题完成**,对应 Schedule.md 第 4 周末检查清单
+- **💎 双倍收益题优先**(位运算三题 C89-C91 + 单调栈 S7/B62 + 括号匹配 S6 + 部分堆题 B51-B52)
+- 禁用 AI 解题,但可以问 AI 思路(AI 即时答疑在 15:00-17:00 时段)
 
-**Phase 2 (第 5-9 周):B (39 题)**
-- 每天 1.5 题新题 + 1 题旧题
-- 开始**用 AI 写、自己找 bug**——这是 Meta 新格式的刻意练习
+**Phase 2 (W5-W12,投递 + 边面试边刷):B + C 段 53 题**
+- W5 测试投 5 家 → W6 正式投 15+ 家 → W7 累计 30+ 家(见 Schedule.md 投递节奏)
+- 投递后**每天保留 2h 刷题**,刷 B 段(优先 B87-B89 Union-Find)+ C 段
+- 开始**用 AI 写、自己找 bug** —— 这是 Meta 新格式的刻意练习
 - 每个模式(DP、BS、Graph、Union-Find)做一张"变体清单"
-- B87-B89 Union-Find 是新加的,优先练
+- **面试前 24 小时**:只刷该公司的模式高频题,不刷新题
 
-**Phase 3 (最后 2 周):C (14 题) + 全量 Mock**
-- 计时做 Pramp / Interviewing.io
+**Phase 3 (W12-W16,Offer 谈判前):全量 Mock + 行为面试**
+- 计时做 Pramp / Interviewing.io(每周 1-2 次)
 - 把 Top 20 AI-易错题在白板上手写一遍(无 IDE)
-- 准备行为面试故事库(STAR 法)
+- 准备行为面试故事库(STAR 法) —— gap narrative 主线(PicoRV32 BSP + 量化研究)
 
 **Phase 4 (面试中):**
 - 如果公司是 **Meta 路线**(AI 协作):练习"用 AI 写、自己 verify"的循环,重点是**给 AI 准确的 prompt + 找出它的边界 case bug**,且 Meta 格式是三段式项目,需额外练架构和优化
@@ -292,6 +302,13 @@
   - [HackerNoon: Testing LLMs on LeetCode 2025](https://hackernoon.com/lite/testing-llms-on-solving-leetcode-problems-in-2025)
 - 题单基础:[NeetCode 150](https://neetcode.io/practice) · [Blind 75](https://leetcode.com/list/x1l9ajn8/) · [Tech Interview Handbook](https://www.techinterviewhandbook.org/blind75)
 - AI 时代策略:[Stop Cheating with AI](https://dev.to/alex_hunter_44f4c9ed6671e/stop-cheating-with-ai-the-senior-engineers-guide-to-leetcode-144n) · [DSA & LeetCode in 2025](https://dev.to/govindup63/dsa-leetcode-in-2025-still-relevant-in-the-age-of-ai-1g8o)
+
+---
+
+## 相关文档
+
+- [`Schedule.md`](./Schedule.md) — 战术执行表(每天 8h 怎么分,4 周怎么走,W5-W16 怎么投递)
+- [`CAREER.md` v3.2](./CAREER.md) — 战略规划(为什么这样转型,4 个月见 offer 的整体策略)
 
 ---
 
