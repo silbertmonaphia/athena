@@ -87,7 +87,7 @@
 ```
 项目:PicoRV32 SoC 软件移植(GitHub:xxx)
 
-(S) 背景:从量化研究转型芯片方向,需快速建立 SoC 软件栈实战经验。
+(S) 背景:从 7 年游戏发行后端 + 数据岗位转型芯片方向,需快速建立 SoC 软件栈实战经验。
 (T) 目标:在 RISC-V 软核 CPU 上完成完整 BSP(Board Support Package),
        启动到 Linux shell。
 (A) 行动:
@@ -104,7 +104,7 @@
 
 ## 面试自我介绍(90 秒版)
 
-> "过去 4 周我自建了 PicoRV32 BSP 项目,基于 RISC-V 开源软核 CPU 完成了 UART/SPI/GPIO 三个外设驱动开发,集成 Buildroot 把 Linux 移植上去,启动到 shell。整个工具栈跟商业芯片公司的 BSP 工程师日常完全一样——iverilog 仿真、QEMU 启动验证、RISC-V GCC 交叉编译、Buildroot 构建、OpenOCD 调试。我之前有 5 年互联网后端经验,工程能力强,数学和算法基础扎实,所以转 SoC 软件栈主要是补硬件和驱动这块——4 周这个项目就是补这块的证明。"
+> "过去 4 周我自建了 PicoRV32 BSP 项目,基于 RISC-V 开源软核 CPU 完成了 UART/SPI/GPIO 三个外设驱动开发,集成 Buildroot 把 Linux 移植上去,启动到 shell。整个工具栈跟商业芯片公司的 BSP 工程师日常完全一样——iverilog 仿真、QEMU 启动验证、RISC-V GCC 交叉编译、Buildroot 构建、OpenOCD 调试。我之前有 7 年游戏发行(算互联网后端)+ 数据岗位经验,工程能力强(C++/Python/SQL/分布式/性能优化/数据处理),所以转 SoC 软件栈主要是补硬件和驱动这块——4 周这个项目就是补这块的证明。"
 
 ---
 

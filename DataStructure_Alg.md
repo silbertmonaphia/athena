@@ -274,7 +274,7 @@
 **Phase 3 (W12-W16,Offer 谈判前):全量 Mock + 行为面试**
 - 计时做 Pramp / Interviewing.io(每周 1-2 次)
 - 把 Top 20 AI-易错题在白板上手写一遍(无 IDE)
-- 准备行为面试故事库(STAR 法) —— gap narrative 主线(PicoRV32 BSP + 量化研究)
+- 准备行为面试故事库(STAR 法) —— gap narrative 主线(PicoRV32 BSP + 7 年游戏发行后端 + 数据岗位)
 
 **Phase 4 (面试中):**
 - 如果公司是 **Meta 路线**(AI 协作):练习"用 AI 写、自己 verify"的循环,重点是**给 AI 准确的 prompt + 找出它的边界 case bug**,且 Meta 格式是三段式项目,需额外练架构和优化
