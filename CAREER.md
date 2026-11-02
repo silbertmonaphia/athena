@@ -205,7 +205,7 @@
 | **Phase A:通用奠基** | M1-M2 | DSA 通用模式 + 体系结构 + OS 复习 + 系统设计 case | Verilog 入门 + NAND2Tetris + EDA Playground |
 | **Phase B:通用深化** | M3-M4 | DSA A 段 + 系统设计 case(SoC 语境) | PicoRV32 BSP 项目 |
 | **Phase C:分开冲刺** | M5-M6 | 行为面试 + STAR 通用 | FAANG Mock + 芯片投递并行 |
-| **Phase D:决策执行** | M7+ | — | 选定一条主路径 |
+| **Phase D:决策执行** | M7+ |   — | 选定一条主路径 |
 
 #### 资源双倍收益用法(1 份时间 = 2 份产出)
 
@@ -333,9 +333,10 @@
 - 芯片用法:RTL 设计 / SoC 架构基础
 - **一本搞定两边**
 
-**INTERVIEW.md 系统设计 case(用 SoC 语境):**
-- 不用 FAANG 通用 case,**直接用芯片语境做**(NPU driver 算子调度、Firmware 升级、License 限流、SoC 内存层次)
-- 一份作业双修
+**系统设计 case — 主线走 [`SystemDesign.md`](./SystemDesign.md)(大厂后端 + AI Infra):**
+- **主线(80% 时间):** 大厂后端通用 case(短链/Feed/IM/订单/秒杀/支付)+ AI Infra(RAG/LLM Serving/Agent 护栏)—— 这两类覆盖 FAANG、AI Infra、LLM 岗、平台岗,也是 AI Infra 人才最稀缺的方向
+- **加分变体(20% 时间):** 芯片语境(NPU driver 算子调度、Firmware 升级、SoC 内存层次)—— **用来打芯片公司的差异化**,不必整套重写,拿主线 case 换皮即可(如"设计一个 NPU 算子调度系统" = "设计一个任务调度系统" 换存储/调度约束)
+- 一份作业双修:大厂 case 直接背;芯片变体只在芯片公司面试时用
 
 **INTERVIEW.md OS 章节:**
 - 并发、内存、锁 — FAANG OS 题 + 芯片 Linux BSP 共用
@@ -357,7 +358,7 @@
 - [ ] 每题能讲清"模式名 + 变体 + 复杂度 + 为什么用这个结构"(满足 FAANG)
 - [ ] 每题能讲清"这个结构在芯片里有什么等价物"(满足芯片)
 - [ ] 《量化研究方法》第 1-5 章读完,能做 Cache/MESI/流水线笔记
-- [ ] 系统设计 1 个 SoC 语境 case 完成(需求澄清 → 容量 → API → 数据模型 → 高层架构 → 深挖 → 故障)
+- [ ] 系统设计 1 个 case 完成(见 [`SystemDesign.md`](./SystemDesign.md) §1 七步框架:需求澄清 → 容量 → API → 数据模型 → 高层架构 → 深挖 → 故障)
 - [ ] INTERVIEW.md OS 章节读完
 
 #### ✅ 芯片专属产出检查清单(M2 末):
@@ -406,11 +407,11 @@
 | 树进阶(A38-A44) | 235/100/572/105/124/297/108 | 必考 | **RTL 层次结构、A42-A43 SoC 核心** |
 | 回溯(A45-A50) | 22/78/46/39/79/212 | 必考 | 搜索算法 |
 
-**系统设计 2 个完整 case(全部用 SoC 语境):**
-- Case 1:NPU driver 算子调度系统(覆盖缓存、队列、限流)
-- Case 2:Firmware 升级服务(覆盖分布式、消息队列、分布式锁)
-- 录音讲 15 分钟 × 2 个,回听自评
-- **一份作业双修**
+**系统设计 2 个完整 case(见 [`SystemDesign.md`](./SystemDesign.md) §5/§6):**
+- Case 1(后端):**秒杀/库存系统** 或 **Feed 流** — 覆盖缓存、限流、削峰、分布式锁、故障剧本
+- Case 2(AI Infra):**RAG pipeline** 或 **LLM Serving 平台** — 2026 高频考点,候选人稀缺,直接对应回退路径 A
+- 录音讲 15 分钟 × 2 个,回听自评(用 [`SystemDesign.md` §9.1](./SystemDesign.md) 的自检清单打分)
+- **芯片变体:** 面试芯片公司时,把 case 换皮成 SoC 语境(NPU driver 算子调度 / Firmware 升级服务),15 分钟内可完成替换
 
 **读《Linux 内核设计与实现》:**
 - FAANG 用法:OS 章节基础
@@ -448,7 +449,7 @@
 #### ✅ 双修产出检查清单(M4 末)
 
 - [ ] DSA A 段 30 题完成(≥ 50 题累计)
-- [ ] 系统设计 2 个 SoC 语境 case 文档 + 录音完成
+- [ ] 系统设计 2 个 case 文档 + 录音完成(后端 + AI Infra 各 1,见 [`SystemDesign.md`](./SystemDesign.md) §5/§6)
 - [ ] 《Linux 内核》第 1-5 章读完
 - [ ] 至少 2 篇技术博客公开(讲题或讲 case)
 - [ ] 双修总投入 ≥ 144h
@@ -960,6 +961,9 @@ M6 末:offer 不满意?
 ### 7.5 工具栈 + 简历模板
 
 - **[`HardwareStack.md`](./HardwareStack.md)** — PicoRV32 BSP 项目累计的工具栈全表(HDL/系统/调试/协作 4 栏)+ 概念栈 + STAR 简历模板 + 90 秒面试自我介绍。简历可粘贴、GitHub README 可嵌入。
+- **[`Trend.md`](./Trend.md)** — BSP 市场趋势 + 投递名单修订(赛道分化:车规/RISC-V/边缘 AI 在涨,通用 AI GPU 在洗牌;S/A/B 级名单调整建议;长期跟踪清单)。
+- **[`SHOPPING.md`](./SHOPPING.md)** — PicoRV32 BSP 项目硬件采购指南。$0 起步(QEMU 路线),W3 末决策是否加 Tier 1(¥80-150 Sipeed Tang Nano 9K FPGA);WSL2 USB 透传方案。
+- **[`SystemDesign.md`](./SystemDesign.md)** — 系统设计面试作战手册。7 步框架 + 数字速查表 + 组件库 + 权衡表 + 16 个案例库(后端 12 + AI Infra 4)+ 深挖追问库 + 12 个故障剧本 + 录音复盘表 + 30 天冲刺计划。**系统设计占面试 40-50%,是权重最高的一块。**
 
 ---
 
@@ -992,7 +996,7 @@ M6 末:offer 不满意?
 - [ ] 每题总结"模式名 + 变体 + 复杂度 + 这个结构在芯片里有什么等价物"
 - [ ] 读《计算机体系结构:量化研究方法》第 1-5 章
 - [ ] 复习 INTERVIEW.md OS 章节
-- [ ] 系统设计 case 1 题(用 SoC 软件栈语境)
+- [ ] 系统设计 case 1 题(见 [`SystemDesign.md`](./SystemDesign.md) §10 第 2 周:短链)
 
 #### 芯片专属(每周 10-15h,20%)
 - [ ] 读完《数字设计和计算机体系结构》第 1-5 章
@@ -1034,7 +1038,7 @@ M6 末:offer 不满意?
 |---|---|---|---|---|
 | LeetCode 完成题数 | 25(S 部分) | 53(S+A) | 75(+B 部分) | **103(全部)** |
 | 位运算完成 | 3(C89-C91) | 3 | 3 | 3 |
-| 系统设计 case | 0 | 1(SoC 语境) | 2 | **3+** |
+| 系统设计 case | 0 | 1 | 2 | **3+** |
 | 系统设计录音 | 0 | 1(15 分钟) | 2 | 3 |
 | OS/网络/数据库复习 | OS 1-6 章 | DB+网络基础 | 全部完成 | — |
 | Mock Interview | 0 | 1-2 次 | 3+ 次 | **3+ 次** |
