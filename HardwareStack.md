@@ -121,4 +121,6 @@
 
 - [Schedule.md](./Schedule.md) — 战术执行表(每天 10h 怎么分,4 周怎么走,W4 末测试投 + W5 正式投)
 - [CAREER.md](./CAREER.md) — 战略规划(为什么转型,4 个月见 offer 的整体策略)
+- [Trend.md](./Trend.md) — BSP 市场趋势 + 投递名单修订(赛道分化,车规/RISC-V/边缘 AI 在涨,通用 AI GPU 在洗牌)
+- [SHOPPING.md](./SHOPPING.md) — 硬件采购指南($0 起步,Tier 1 加分项,W3 末决策树,WSL2 USB 透传)
 - [DataStructure_Alg.md](./DataStructure_Alg.md) — 103 题 + 💎 双倍收益标注
